@@ -826,6 +826,10 @@ namespace Symbol.XamarinEMDK.BarcodeSample1
                     // Set Code128
                     config.DecoderParams.Code128.Enabled = checkBoxCode128.Checked;
 
+                    //  DCC
+                    config.DecoderParams.I2of5.Enabled = true;
+                    //  End DCC
+
                     // Should be assigned back to the property to get the changes to the lower layers.
                     scanner.SetConfig(config);
                 }
